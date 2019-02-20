@@ -17,6 +17,8 @@ import ListDeck from './components/Decks/ListDeck';
 import CreateCard from './components/Cards/CreateCard';
 import Quiz from './components/Quiz';
 
+import { setLocalNotification } from './utils/helpers'
+
 function MyStatusBar({backgroundColor, ...props}) {
     return (
         <View style={{backgroundColor, height: Constants.statusBarHeight}}>
@@ -60,6 +62,8 @@ export default class App extends React.Component {
     };
 
     componentWillMount() {
+
+        setLocalNotification()
         this.loadFonts();
     }
 
@@ -80,7 +84,7 @@ export default class App extends React.Component {
             <Provider store={createStore(reducer)}>
                 <Root>
                 <View style={{flex: 1}}>
-                    <MyStatusBar barStyle="light-content"/>
+                    <MyStatusBar backgroundColor={"#30488B"} barStyle="light-content"/>
                     <MainNavigator/>
                 </View>
                 </Root>
