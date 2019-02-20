@@ -1,6 +1,6 @@
 # FlashCards APP
 Esse é o projeto final do curso de React Native,
-que foi construindo um webapp utilizando os métodos aprendidos no curso. 
+que foi construindo um app utilizando os métodos aprendidos no curso. 
 Neste Aplicativo os usuários podem:
  - criar decks 
  - cartas
